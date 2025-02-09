@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected Games</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #00c6ff, #ff6ec7, #8e2de2); 
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-size: 300% 300%;
+            animation: gradientAnimation 6s ease infinite; 
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); 
+        }
+
+       
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+      
+        .game-box {
+            background: rgba(255, 255, 255, 0.1); 
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease; 
+            position: relative;
+        }
+
+        .game-box:hover {
+            transform: translateY(-10px); 
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+            filter: brightness(1.2); 
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: #dcdcdc;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to right, #00c6ff, #ff6ec7); 
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+            transition: background 0.3s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Smooth transition effects */
+        }
+
+        .btn:hover {
+            background: linear-gradient(to right, #ff6ec7, #00c6ff); 
+            transform: scale(1.1); 
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5); 
+            filter: brightness(1.2); 
+            animation: glowing 1.5s ease-in-out infinite alternate;
+        }
+
+       
+        @keyframes glowing {
+            0% {
+                box-shadow: 0 0 5px #ff6ec7, 0 0 10px #ff6ec7, 0 0 15px #ff6ec7;
+            }
+            100% {
+                box-shadow: 0 0 20px #ff6ec7, 0 0 30px #ff6ec7, 0 0 40px #ff6ec7;
+            }
+        }
+
+       
+        .footer-box {
+            background-color: #007BFF; 
+            color: white;
+            padding: 20px;
+            font-size: 1.2rem;
+            margin-top: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+            text-align: center;
+        }
+
+        .footer-box p {
+            margin: 0;
+            font-weight: 600;
+        }
+
+       
+        @media (max-width: 768px) {
+            body {
+                padding: 30px 15px;
+            }
+
+            .game-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .footer-box {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Protected Games</h1>
+    <p>Wanna get your game protected? Join: <a href="https://discord.gg/binlyshub">Binlys discord</a>
+    </p>
+
+    <div class="game-grid">
+        <div class="game-box">
+            <h2>Project Shadow</h2>
+            <p>Project Shadow is a Rebuild of gorilla tag with a mod menu that has over 10 pages of mods. We have been a thing for 2 years and we have 4.7k great members! We do giveaways and you can get every cosmetic if you boost the server!</p>
+            <a href="https://discord.gg/shadowtag" class="btn">Play Game</a>
+        </div>
+        <div class="game-box">
+            <h2>Forward tag</h2>
+            <p>Epic monke game</p>
+            <a href="https://discord.gg/tBvAjye7SG" class="btn">Play Game</a>
+        </div>
+        <div class="game-box">
+            <h2>Horror Apes</h2>
+            <p>In Horror Apes, you find yourself trapped in a remote jungle after a research expedition goes awry. The facility, once a hub for studying primate intelligence, has become a nightmarish labyrinth filled with grotesque, genetically modified apes. As you explore the eerie, overgrown grounds, you must solve cryptic puzzles and scavenge for supplies while avoiding the vengeful creatures that stalk your every move. With a gripping narrative and immersive gameplay, Horror Apes challenges you to confront the darkness of human ambition and the primal fears that lurk just beyond the shadows. Will you escape, or will the horrors of the past consume you?</p>
+            <a href="https://discord.gg/nbEpnGRy3V" class="btn">Play Game</a>
+        </div>
+        <div class="game-box">
+            <h2>Nun yet</h2>
+            <p>Nun yet</p>
+            <a href="https://discord.gg/" class="btn">Play Game</a>
+        </div>
+        <div class="game-box">
+            <h2>Nun yet</h2>
+            <p>Nun yet</p>
+            <a href="https://discord.gg/" class="btn">Play Game</a>
+        </div>
+        <div class="game-box">
+            <h2>Nun yet</h2>
+            <p>Nun yet</p>
+            <a href="https://discord.gg/" class="btn">Play Game</a>
+        </div>
+    </div>
+
+    <div class="footer-box">
+        <p>Website developed by G4. Please make sure to checkout all these games as they are very fun and made by cool people!</p>
+    </div>
+</body>
+</html>
